@@ -1,0 +1,44 @@
+/*footer*/
+footer{
+    margin-top: 20px;
+    background: rgb(61, 59, 59);
+    height: 120px;
+}
+/*lado izquierdo del footer*/
+.footer1{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+/*lado derecho del footer*/
+.footer2{
+    margin-top: 10px;
+    float: right;
+    top: 0;
+    width: 50%;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+/*iconos de las redes sociales*/
+.iconos{
+    display:flex;
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    flex-direction: row;
+    font-size: 40px;
+}
+/*texto: "Nuestras Redes"*/
+.redes{
+    font-size: 20px;
+    color:white;
+}
+/*texto: "terminos y condiciones, etc"*/
+.info{
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+}

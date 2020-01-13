@@ -1,0 +1,272 @@
+/* CUERPO*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+/*header*/
+    header {
+        width: 100%;
+        height: 50px;
+        background:#831919;
+        color: #fff;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    /*diseño del molde del login*/
+    .molde-login{
+        top: 8px;
+        position: absolute;
+       right: 2%;
+       background: green;
+       height: 35px;
+       width: 120px;
+       border-radius: 20px;
+       cursor: pointer;
+       font-family: Verdana, Tahoma, sans-serif;
+       border: 2px solid white;
+       background: transparent;
+       font-weight: bold;
+       text-align: center;
+    }
+    .molde-login:hover{
+        background: white;
+        color: #831919;
+        transition: 0.2s;
+        
+    }
+    .molde-login p{
+        font-size: 20px;
+        
+        text-align: center;
+    }
+    /*diseño del enlace a login*/
+    .molde-login p a{
+        text-decoration: none;
+        color: white;
+    }
+    .molde-login p a:link{
+        text-decoration: none;
+        
+    }
+    .molde-login p a:hover{
+        text-decoration: none;
+        color:#831919;
+        
+    }
+
+    /*titulo*/
+    header h1{
+        text-align: center;
+        font-family: 'Stencil';
+        
+    }
+    .enlace{ 
+        color: white;
+        text-decoration: none;   
+        }
+    h1 a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    
+    /*menu desplegable*/
+    .sidebar{
+        left: 0;
+        top: 50px;
+        color: rgb(202, 138, 138);
+        background: rgb(61, 59, 59);
+        width: 50%;
+        height: 100vh;
+        color: white;
+        position: absolute;
+        position: fixed;
+        transition: all 0.5s;
+        transform: translateX(-100%);
+    }
+
+    /*opciones del menu desplegable*/
+    .sidebar ul {
+        list-style: none;
+        padding:0;
+        margin: 0;
+        
+    }
+    .sidebar li:hover{
+        background: #444;
+        border-left: 4px solid #eee;
+    }
+    .sidebar li {
+        transition-property: border;
+        transition-duration: 0.4s;
+    }
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        padding: 15px;  
+    }
+    .search{
+        width: 95%;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        border: 0;
+        text-align: center;
+    }
+
+    /*checkbox e icono de menu*/
+    #menu-bar {
+        display: none;
+    }
+    header label {
+        float: left;
+        font-size: 35px;
+        top: 0%;
+        left: 1.2%;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+    }
+
+    /*despliegue del menu*/
+    #menu-bar:checked ~ .sidebar {
+        transform: translateX(0%);
+    }
+    @media (min-width:700px){
+        .sidebar{
+            left: 0;
+            top: 50px;
+            color: rgb(202, 138, 138);
+            background: rgb(61, 59, 59);
+            width: 250px;
+            height: 100vh;
+            color: white;
+            position: absolute;
+            position: fixed;
+            transition: all 0.5s;
+            transform: translateX(-100%); 
+        }
+        
+    }
+/*menú*/
+    /*cuerpo del menú*/
+    main{
+        color: white;
+        padding-top:65px ;
+    }
+    /*Títulos: cartelera, estrenos, populares*/
+    main h1{
+        padding-left: 2%;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    /*condicional de los titulos*/
+    @media(min-width:10px){
+        .contenedor-movies{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+/*cuerpo de noticias*/
+    
+    article{
+        margin-top: 25px;
+        
+    }
+    /* cuerpo del titulo noticia*/
+    .banner{
+        margin-top: 10px;
+        background: #831919;
+        height: 40px;
+        padding-top: 3px;
+    }
+    /*noticia:letra*/
+    .noticias{
+        
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    /*DETALLES DE LOS CARDS*/
+    .contenedor-cards{
+        color: white;
+        padding-top:12px ;
+        margin-top: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+        background: rgb(61, 59, 59);
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .card-body{
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+    }
+    .card-img-top{
+        border-radius: 10px;
+    }
+    .card{
+        background: transparent;
+        border: none;
+    }
+    .contenedor-cards-hijo{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+/*footer*/
+footer{
+    margin-top: 20px;
+    background: rgb(61, 59, 59);
+    
+    height: 120px;
+}
+/*lado izquierdo del footer*/
+.footer1{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+/*lado derecho del footer*/
+.footer2{
+    margin-top: 10px;
+    float: right;
+    top: 0;
+    width: 50%;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+/*iconos de las redes sociales*/
+.iconos{
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+    
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+/*texto: "Nuestras Redes"*/
+.redes{
+    font-size: 20px;
+    color:white;
+}
+/*texto: "terminos y condiciones, etc"*/
+.info{
+    margin-top: 1px;
+    font-size: 20px;
+    color: white;
+}

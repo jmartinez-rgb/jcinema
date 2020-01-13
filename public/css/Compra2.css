@@ -1,0 +1,250 @@
+@import url(../header.css);
+body{
+    background: black,
+}
+main{
+    padding-top: 80px;
+    font-family: 'Calibri';
+    color: white;
+    background: black;
+}
+article{
+    color: white;
+    background: black;
+}
+main h2{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+
+table, tr,td{
+    border: 0px;
+}
+td{
+    width:9.09090909091%;
+}
+table tr td i{
+    font-size: 23px;
+}
+.columna{
+    font-size: 20px;
+    height: 11%;
+    font-weight: bold;
+    background: crimson;
+}
+.fila{
+    font-size: 20px;
+    height: 11%;
+    font-weight: bold;
+    background: crimson;
+}
+.pasadiso{
+    background: forestgreen;
+}
+.asiento{
+    cursor: pointer;
+    color: crimson;
+    position: relative;
+}
+.asiento .filxcol{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.asiento:hover{
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+.cambio{
+    color: green;
+}
+.cambio-celda{
+    background: rgb(255, 255, 255);
+}
+.tabla1{
+    background: rgb(0, 0, 0);
+    width: 90%;
+    height: 250px;
+    margin:auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.tabla2{
+    background: rgb(0, 0, 0);
+    width: 90%;
+    height: 25px;
+    margin:auto;
+    text-align: center;
+    max-width: 700px;
+}
+.tabla2 td{
+    height: 25px;
+}
+.tabla3{
+    background: rgb(0, 0, 0);
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    max-width: 700px;
+    text-align: center;
+}
+.tabla1 .pasadiso{
+    height: 25px;
+}
+.pantalla{
+    background: dodgerblue;
+    
+}
+
+
+.baner-pago{
+    margin-top: 10px;
+    width: 100%;
+    background: maroon;
+    
+    padding:5px ;
+}
+.baner-pago h2{
+    text-align: center;
+    font-family: 'Calibri';
+    color: white;
+    
+}
+
+.contenedor-prim{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    /*background: rebeccapurple;*/
+    background: rgb(46, 45, 45);
+}
+.contenedor-sec{
+    width: 90%;
+    background: rgb(46, 45, 45);
+    margin: auto;
+    display: flex;
+    max-width: 600px;
+    
+}
+.contenedor-sec img{
+    width: 45%;
+    background: red;
+    margin-right: 3%;
+    
+}
+.contenedor-sec p{
+    text-align: justify;
+    padding-right: 4%;
+}
+.contenedor-sec h3{
+    text-align: center;
+    font-size: 30px;
+    
+    width: 90%;
+    border-bottom: 2px solid red;
+}
+
+.funcion li{
+    list-style: none;
+    font-size: 20px;
+}
+.funcion{
+    width: 50%;
+    font-family: 'Calibri';
+}
+.funcion ul{
+    margin-top: 10px;
+}
+
+
+
+
+.contenedor-datos-personales{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: 'Calibri';
+    
+}
+.contenedor-datos-personales h2{
+    
+    margin-bottom: 8px;
+}
+.contenedor-datos-personales  p{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-datos-personales label{
+    width: 30%;
+    max-width: 200px;    
+    padding: 10px;
+}
+.cont-tarj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    
+    padding: 10px;
+}
+.point{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+.point-fill{
+    background: rgb(19, 199, 223);
+    transition: all 0.2s;
+}
+
+
+.banner-continuar{
+    /*background: darkkhaki;*/
+    display: flex;
+    justify-content: flex-end;
+    background: maroon;
+}
+.banner-continuar p{
+    margin-left: 10px;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'Calibri';
+    
+    
+}
+.continuar{
+    
+    margin: 10px 10px 7px 0;
+    background: white;
+    color: red;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Calibri';
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (min-width:700px){
+    .modo{
+        display: flex;
+    }
+    .contenedor-prim{
+        width: 50%;
+    }
+    .derecho{
+        width: 50%;
+    }
+    .cont-tarj{
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,243 @@
+body{
+  background: black;
+  position: relative;
+
+}
+.sidebar{
+  color: rgb(202, 138, 138);
+  background: rgb(61, 59, 59);
+ width: 15%;
+ height: 100%;
+ color: white;
+ 
+ position: absolute;
+}
+.sidebar ul {
+  list-style: none;
+  padding:0;
+  margin: 0;
+  
+}
+
+.sidebar h2{
+  background-color:#831919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  height: 9.2vh;
+  
+}
+.sidebar li:hover{
+  background: #444;
+  border-left: 5px solid #eee;
+}
+.sidebar li {
+  font-size: 100%;
+  
+  width: 100%;
+  transition-property: border;
+  transition-duration: 0.4s;
+}
+.sidebar a {
+  
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding:10px;
+  font-size: 5vh;
+    
+}
+.contenido{
+  width: 100%;
+  height: 100%;
+  background: blue;
+  position: relative;
+  transition: all 0.4s;
+  
+}
+.abrir{
+  transform:translateX(15%);
+}
+
+
+header{
+  width: 100%;
+  height: 9.2vh;
+  background-color:#831919;
+  color:black;
+  font-family: 'Stencil';
+}
+.jcinema a{
+  margin: auto;
+  padding:none;
+  text-decoration: none;
+  color:white;
+  font-size: 6vh;
+  float: right;
+  
+  
+
+}
+
+
+.menu_contenedor{
+  width: 25%;
+  height: 100%;
+  float: left;
+  outline:3px solid blue;
+  
+}
+.menu-bar{
+  float: left;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-top: 3%;
+  
+}
+
+.jcinema{
+  width: 32%;
+  height: 100%;
+  
+  float: left;
+  outline:3px solid blue;
+
+}
+
+.buscador{
+  height: 100%;
+  width: 23%;
+  float: left;
+  outline:3px solid blue;
+ 
+}
+.busqueda{
+  
+  cursor: pointer;
+  float: right;
+  margin-top: 4%;
+}
+
+.login{
+  height: 100%;
+  width: 20%;
+  float: left;
+  outline:3px solid blue;
+  
+  
+}
+
+
+.boton{
+  float: right;
+  margin: 3% 8% 0 0;
+  
+  border-radius: 5%;
+  height: 70%;
+  width: 45%;
+  background: transparent;
+  border:3px solid white;
+  font-family:Verdana;
+  color: white;
+  transition-property: background;
+  transition-duration: 0.5s;
+  cursor: pointer;
+
+  
+}
+.boton p {
+  padding-top: 1.5%;
+  font-size: 2vh;
+
+  display: flex;
+justify-content: center;
+align-items: center;
+  
+}
+.boton:hover{
+  
+  background: white;
+  color: #831919;
+}
+td{
+  
+  height: 100%;
+  
+}
+
+#busqueda{
+  float: right; 
+  padding-right: 4%;
+}
+
+#main{
+  background:rgb(17, 17, 17);
+  height: 100%;
+  
+}
+
+.titulo{
+  color: white;
+  margin-left: 5%;
+  padding-top:1%;
+  font-size: 4vh;
+
+}
+#noticias{
+  font-size: 2.3vh;;
+  text-align: center;
+  color: white;
+  background: rgb(117, 24, 29);
+  height: 3.4vh;
+  padding-top: 0.4%;
+
+}
+
+.card{
+  background: transparent; 
+  padding: 1% 1% 1% 1%;
+  border-color: transparent;
+}
+.noticias2{
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  color: white;
+  
+  padding: 1% 6% 2% 6% ;
+}
+.card-img-top{
+  height: 65%;
+  width: 100%;
+  border-radius: 4%;
+  background:red;}
+.card-deck{
+  background: rgb(61, 59, 59);
+  border-radius: 2%;
+  width: 90%;
+  margin:auto;
+  border: 1px solid black;
+}
+footer{background: rgb(61, 59, 59);}
+#siguenos{
+  color: rgb(255, 255, 255);
+  padding-left: 2.5%;
+}
+.redes{
+  padding-left: 4%;
+  padding-right: 4%;
+  float: left;
+}
+.table2{
+  width: 100%;
+}
+.td2{
+ 
+  width: 50%;
+}
+.rec-inf{
+  text-align: right;
+  padding-right: 4%;
+  color: white;
+}

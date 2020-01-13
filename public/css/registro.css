@@ -1,0 +1,117 @@
+@import url(header.css);
+@import url(footer.css);
+    /*menú*/
+    .main{
+        padding-top: 50px;
+    }
+    /*caja de formulario*/
+    main .formulario{
+        background: rgb(61, 59, 59);
+        color: white;
+        margin: auto;
+        width: 400px;
+        height: 500px;
+        top: 55%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        outline: 5px solid #b81c1c;
+        
+    }
+    /*titulo: REGISTRO*/
+    main h1{
+        background: #b81c1c;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-bottom: 5px;
+        font-weight: bold;
+
+    }
+    /*caja contenido*/
+    main .contenido{
+        height: 80%;
+        padding-top: 0px;
+        top: 0;
+    }
+    /*caja de almacen de nombre y apellido*/
+    #nombre-apellido{
+        display: flex;
+        justify-content: space-between;
+    } 
+    /*inputs de la caja almacen de nombre y apellido*/
+    #nombre-apellido input[type="text"]{
+        width: 60%;
+        margin: 0 5px 0 5px;
+        
+        border:none;
+        padding:10px;
+        font-size: 15px;
+        background: transparent;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+    }
+    /*color del placeholder*/
+    #nombre-apellido input[type="text"]::placeholder{
+        color: white; opacity: 0.6;
+    }
+    /*contenedor de inputs*/
+    .contenedor-input{
+        padding: 8px 10px 8px 10px;
+        
+    
+    }
+    /*usuario,password,email*/
+    main .text-other{
+        
+        width: 75%;
+        border:none;
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 10px;
+        background: transparent;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        margin-left: 5px;
+    }
+    /*placeholder*/
+    main .text-other::placeholder{
+        color: white; opacity: 0.6;
+    }
+
+    /*boton registro*/
+    .boton{
+        background: #b81c1c;
+        margin-top: 3.5%;
+        margin-left: 5%;
+        width: 90%;
+        border: none;
+        height: 10%;
+        border-radius: 5px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        font-weight: bold;
+        color: white;
+    }
+    .boton:hover{
+        background: white;
+        color: #b81c1c;
+        transition: 0.3s;
+    }
+    /*iniciar sesion, acepta nuesto terminos...*/
+    main p{
+        font-size: 13px;
+        margin: 10px;
+        text-align: justify;
+    }
+    i{
+        color: white;
+        font-size: 25px;
+
+    }
+    
